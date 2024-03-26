@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from fastapi import status, HTTPException, Depends
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-import schemas, database, models
+import app.schemas, app.database, app.models
 from routers import auth
 from config import settings
 
