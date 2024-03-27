@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
-import models, schemas, database, oauth2
+from app import models, schemas, database, oauth2
 
 router = APIRouter(
     prefix="/vote",
